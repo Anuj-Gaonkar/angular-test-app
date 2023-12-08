@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { TopHeaderComponent } from './top-header/top-header.component';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { HeaderComponent } from './header/header.component';
   imports: [CommonModule, 
     RouterOutlet, 
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    TopHeaderComponent
   ],
   templateUrl: './app.component.html',
   // template: `

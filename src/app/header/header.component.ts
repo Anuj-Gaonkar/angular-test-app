@@ -1,7 +1,11 @@
 import { Component } from "@angular/core";
+import { TopMenueComponent } from "./top-menu/top-menu.component";
+import { MainMenuComponent } from "./main-menu/main-menu.component";
+import { SearchBarComponent } from "./search-bar/search-bar.component";
 
 @Component({
     standalone: true,
+    imports:[TopMenueComponent, MainMenuComponent, SearchBarComponent],
     selector: 'app-header',
     // template: '<h3>Header</h3>',
     templateUrl: './header.component.html',
