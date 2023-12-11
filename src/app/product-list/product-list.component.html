@@ -14,7 +14,7 @@
 <p>Name = {{name}}</p> -->
 
 <div class="ekart--product--container">
-    <img src={{product.pImage}}>
+    <!-- <img src={{product.pImage}}>
     <p>Name: {{product.name}}</p>
     <p>Price: {{product.price}}</p>
     <p>Color: {{product.color}}</p>
@@ -23,6 +23,7 @@
     <p>{{product.inStock >= 0 && product.inStock <= 5 ? 'Only ' + product.inStock + ' products are available' : product.inStock > 5 ? 'Availbale' : 'Out of stock'}}</p>
     <button (click)="removeProductFromCart()" [disabled]="addToCart == 0">-</button>
     <span>{{ addToCart }}</span>
-    <button (click)="addProductToCart()" [disabled]="product.inStock == 0">+</button>
+    <button (click)="addProductToCart()" [disabled]="product.inStock == 0">+</button> -->
+    <app-search></app-search>
 </div>
 
