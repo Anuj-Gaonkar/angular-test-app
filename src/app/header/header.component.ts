@@ -5,8 +5,11 @@ import { SearchBarComponent } from "./search-bar/search-bar.component";
 
 @Component({
     standalone: true,
-    imports:[TopMenueComponent, MainMenuComponent, SearchBarComponent],
-    selector: 'app-header',
+    imports:[TopMenueComponent, 
+        MainMenuComponent, 
+        // SearchBarComponent
+    ],
+    selector: '.app-header',
     // template: '<h3>Header</h3>',
     templateUrl: './header.component.html',
     styleUrl: './header.component.css'

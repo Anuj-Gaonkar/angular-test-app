@@ -1,0 +1,28 @@
+<!-- <img src={{product.pImage}}> -->
+<!-- <img [src]="product.pImage"> -->
+<!-- <p>Name: {{product.name}}</p> -->
+<!-- <p>Price: ${{product.price}}</p> -->
+<!-- <p>Color: {{product.color}}</p> -->
+<!-- <p>Discounted Price: ${{product.price - (product.price * product.discount / 100)}}</p> -->
+<!-- <p>Discounted Price: {{ '$' + calculateDiscountedPrice().toFixed(2) }}</p> -->
+<!-- <p>{{product.inStock > 0 ? "Available in stock" : "Not Available"}}</p> -->
+<!-- <p>{{product.inStock >= 0 && product.inStock <= 5 ? 'Only  + product.inStock +  products are available' : product.inStock > 5 ? 'Availbale' : 'Out of stock'}}</p> -->
+<!-- <button (click)="onBuy()" [disabled]="product.inStock === 0 ? true : false" type="button">Buy Now</button> -->
+<!-- <button bind-disabled="!(product.inStock > 0)">Test</button> -->
+<!-- <br>
+<input (input)="editName($event)">
+<p>Name = {{name}}</p> -->
+
+<div class="ekart--product--container">
+    <img src={{product.pImage}}>
+    <p>Name: {{product.name}}</p>
+    <p>Price: {{product.price}}</p>
+    <p>Color: {{product.color}}</p>
+    <p>Stock: {{product.inStock}}</p>
+    <p>Discounted price: {{calculateDiscountedPrice()}}</p>
+    <p>{{product.inStock >= 0 && product.inStock <= 5 ? 'Only ' + product.inStock + ' products are available' : product.inStock > 5 ? 'Availbale' : 'Out of stock'}}</p>
+    <button (click)="removeProductFromCart()" [disabled]="addToCart == 0">-</button>
+    <span>{{ addToCart }}</span>
+    <button (click)="addProductToCart()" [disabled]="product.inStock == 0">+</button>
+</div>
+
