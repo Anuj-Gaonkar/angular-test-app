@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { ContainerComponent } from './container/container.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     HomeComponent,
     HeaderComponent,
     TopHeaderComponent,
-    ProductListComponent
+    ContainerComponent
   ],
   templateUrl: './app.component.html',
   // template: `

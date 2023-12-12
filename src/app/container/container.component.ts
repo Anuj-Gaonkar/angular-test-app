@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { SearchComponent } from './search/search.component';
+import { CommonModule } from '@angular/common';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
-  selector: 'product-list',
+  selector: 'app-container',
   standalone: true,
-  imports: [SearchComponent],
-  templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css'
+  imports: [SearchComponent, CommonModule, ProductListComponent],
+  templateUrl: './container.component.html',
+  styleUrl: './container.component.css'
 })
-export class ProductListComponent {
+export class ContainerComponent {
   // name: string = 'iphone';
   // price: number = 900;
   // color: string = 'Red';
@@ -22,6 +24,8 @@ export class ProductListComponent {
     inStock: 5,
     pImage: "/assets/iphone.png"
   }
+
+  products: product[] = [this.product];
 
   // calculateDiscountedPrice(price: number, discount: number) : number{
   //   return price - (price * discount / 100);
@@ -61,4 +65,13 @@ export class ProductListComponent {
   //   console.log(event.target.value);
   //   this.name = event.target.value;
   // }
+}
+
+type product = {
+  name: string;
+  price: number;
+  color: string;
+  discount: number;
+  inStock: number;
+  pImage: string;
 }

@@ -25,5 +25,9 @@
     <span>{{ addToCart }}</span>
     <button (click)="addProductToCart()" [disabled]="product.inStock == 0">+</button> -->
     <app-search></app-search>
+    <!-- <div *ngFor="let item of products">
+        <p>{{item.name}}</p>
+    </div> -->
+    <product-list></product-list>
 </div>
 
