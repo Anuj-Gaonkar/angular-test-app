@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'product-list',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
@@ -17,11 +18,12 @@ export class ProductListComponent {
       "gender": "Unisex",
       "category": "Footwear",
       "size": "9",
-      "color": "Black/White",
+      "color": ["Black"],
       "price": 149.99,
       "is_in_inventory": true,
+      "discountPrice": 135,
       "items_left": 25,
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/11-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg",
+      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6ef8f54a-1dda-49b8-9097-34c9c3dc766e/court-vision-low-next-nature-shoes-N2fFHb.png",
       "slug": "air-max-270"
     },
     {
@@ -32,11 +34,11 @@ export class ProductListComponent {
       "gender": "Unisex",
       "category": "Footwear",
       "size": "8.5",
-      "color": "Blue/Green",
+      "color": ["Blue, Green"],
       "price": 169.99,
       "is_in_inventory": true,
       "items_left": 15,
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/11-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg",
+      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6ef8f54a-1dda-49b8-9097-34c9c3dc766e/court-vision-low-next-nature-shoes-N2fFHb.png",
       "slug": "react-infinity-run-flyknit"
     },
     {
@@ -47,11 +49,11 @@ export class ProductListComponent {
       "gender": "Unisex",
       "category": "Footwear",
       "size": "10",
-      "color": "White",
+      "color": ["White", "Red"],
       "price": 129.99,
       "is_in_inventory": true,
       "items_left": 30,
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/11-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg",
+      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6ef8f54a-1dda-49b8-9097-34c9c3dc766e/court-vision-low-next-nature-shoes-N2fFHb.png",
       "slug": "air-force-1"
     }
     // Add more Nike shoes products as needed
